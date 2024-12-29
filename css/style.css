@@ -1,0 +1,870 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+  scroll-behavior: smooth;
+}
+
+code {
+  background: #f0f0f0;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #181818;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+h3 {
+  color: #2c2c2c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+h4 {
+  color: #2c2c2c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+h5 {
+  color: #414141;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+h6 {
+  color: #563cff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* =============== top bar css starts =============== */
+.top-bar {
+  background-color: #04091e;
+  color: white;
+  padding: 10px 0;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.top-bar a:hover i {
+  transition: color 0.3s;
+  color: #ffe100;
+}
+/* =============== top bar css ends =============== */
+
+/* =============== nav bar css starts =============== */
+.navbar-custom {
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  margin-right: 20px;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: white;
+  display: none; /* Hide dropdown menu by default */
+}
+
+.navbar-nav .dropdown-menu a {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* Show dropdown menu on hover */
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensure proper positioning of dropdown */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+}
+/* =============== nav bar css ends =============== */
+
+/* =============== index page banner starts =============== */
+.banner {
+  position: relative;
+  background-image: url("https://smartprogramming.in/images/banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1;
+}
+
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* =============== index page banner starts =============== */
+
+/* =============== index page banner cards starts =============== */
+.ipb-card-section {
+  margin-top: -80px;
+}
+
+/* pre-defined card with default changes */
+.card {
+  z-index: 1;
+  margin-bottom: 30px;
+  position: relative; /* Ensures that the card’s position is not affected by other elements */
+  margin: 20px;
+}
+
+.ipb-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ipb-hover-effect:hover {
+  transform: scale(1.05); /* Slightly zoom in */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.ipb-card-header-custom {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+  color: white;
+  padding: 0.6rem;
+}
+
+.ipb-card-heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+/* =============== index page banner cards starts =============== */
+
+/* =============== index page about smart programming starts =============== */
+.index-asp-div {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.index-asp-div .image-container {
+  flex: 1;
+}
+
+.index-asp-div .text-container {
+  flex: 2;
+  padding-left: 20px;
+}
+/* =============== index page about smart programming ends =============== */
+
+/* =============== course cards starts =============== */
+.course-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: auto;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card-body {
+  padding: 1rem;
+}
+
+.free-course-card-title {
+  font-size: 1.1rem;
+  color: #04091e;
+}
+
+.course-card-title {
+  font-size: 1rem;
+  color: #04091e;
+  text-align: left;
+}
+
+.course-card-text {
+  text-align: left;
+}
+
+.course-card-price {
+  font-size: 1rem;
+  /* Adjust price font size */
+  color: #333;
+}
+
+.div-svgimg-bg {
+  background-image: url("https://smartprogramming.in/images/svgimages/wave.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.div-svgimg-bgg {
+  background-image: url("https://smartprogramming.in/images/svgimages/wavee.svg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the div */
+  background-position: center;
+}
+
+/* =============== course cards ends =============== */
+
+/* =============== join our community starts =============== */
+.community-banner {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.community-title {
+  font-size: 3rem;
+}
+
+.social-icons .social-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.social-icons .social-item a {
+  font-size: 2rem;
+  display: block;
+  color: inherit;
+  /* Inherit color from parent */
+  transition: color 0.3s;
+}
+
+.social-icons .social-item a:hover {
+  opacity: 0.8;
+}
+
+.social-icons .fa-facebook {
+  color: #3b5998;
+}
+
+.social-icons .fa-instagram {
+  color: #e1306c;
+}
+
+.social-icons .fa-whatsapp {
+  color: #25d366;
+}
+
+.social-icons .fa-telegram {
+  color: #0088cc;
+}
+
+.social-icons .fa-discord {
+  color: #7289da;
+}
+
+.social-icons .fa-youtube {
+  color: #ff0000;
+}
+
+.followers {
+  font-size: 1rem;
+  color: #ccc;
+}
+/* =============== join our community starts =============== */
+
+/* =============== why choose Us starts =============== */
+.wcu-card {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.wcu-card:hover {
+  transform: translateY(-5px);
+}
+/* =============== why choose Us ends =============== */
+
+/* =============== testimonials starts =============== */
+.testimonial-carousel .carousel-item {
+  padding: 20px;
+}
+
+.testimonial-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  padding: 15px;
+  flex: 1;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-college {
+  color: #6c757d;
+  margin: 5px 0 15px;
+}
+/* =============== testimonials ends =============== */
+
+/* =============== carousel starts =============== */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+/* =============== carousel ends =============== */
+
+/* =============== footer starts =============== */
+.footer {
+  background-color: #04091e;
+  color: white;
+  padding: 20px 0;
+}
+.footer-link {
+  color: #8f8f8f;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+/* =============== footer ends =============== */
+
+/* =============== all pages banner header & body starts =============== */
+.all-page-heading-banner {
+  background: url("https://smartprogramming.in/images/smart-programming-banner.jpg");
+}
+.every-page-heading {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+.every-page-subheading {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/* content division */
+.common-div-bg {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+/* =============== all pages banner header & body ends =============== */
+
+/* =============== free courses syllabus design starts =============== */
+.course-div-gradient {
+  height: auto;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    white 60px,
+    #e4e4e4 50px,
+    /* Start blue gradient after 50px */ #fafafa calc(100% - 60px),
+    /* Continue blue gradient until 50px from the bottom */ white
+      calc(100% - 60px) /* End with white at the bottom */
+  );
+}
+.chapter {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.chapter:nth-of-type(odd) {
+  border-left: 5px solid #007bff; /* Blue for odd chapters */
+}
+.chapter:nth-of-type(even) {
+  border-left: 5px solid #28a745; /* Green for even chapters */
+}
+.details-summary {
+  cursor: pointer;
+  color: #333333; /* Dark grey for chapter summaries */
+  transition: color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+}
+.details-summary:hover {
+  color: #000000; /* Darker grey on hover */
+  font-weight: bold;
+}
+.details-content {
+  margin-left: 1.5rem;
+  color: #555555; /* Light grey for subtopics */
+}
+.details-content ul {
+  padding-left: 1.5rem;
+  list-style-type: none; /* Remove default list styling */
+}
+.details-content li {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 2px;
+}
+.details-content a {
+  text-decoration: none;
+  color: #767676; /* Blue links */
+  transition: color 0.3s;
+}
+.details-content a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+.syllabus-div-bg {
+  background-color: rgb(246, 246, 246);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.by-deepak-sir {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+/* =============== free courses syllabus design ends =============== */
+
+/* =============== premium courses page design starts =============== */
+.questions-div-title {
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.questions-div-bg {
+  background-color: rgb(246, 246, 246);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgb(151, 151, 151);
+}
+
+.wcop-titles {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff0000;
+}
+/* =============== premium courses page design ends =============== */
+
+/* =============== blue color small card design starts =============== */
+.blue-color-card {
+  width: auto;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.blue-color-card-header {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.blue-color-card-body {
+  font-size: 12px;
+  text-align: center;
+}
+/* =============== blue color small card design ends =============== */
+
+/* =============== why choose us card design starts =============== */
+.wcu-training-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.wcu-training-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wcu-training-card-header {
+  color: #343434;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wcu-training-card-body {
+  font-size: 14px;
+  color: #495057;
+}
+/* =============== why choose us card design ends =============== */
+
+/* =============== development image zoom starts =============== */
+.zoom-tilt {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-tilt img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+}
+
+.zoom-tilt:hover img {
+  transform: scale(0.9) rotate(-1deg);
+}
+.zoom-tilt:hover h5 {
+  color: #1c1c1c;
+}
+/* =============== development image zoom ends =============== */
+
+/* =============== gallery starts =============== */
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 20px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Blue background with opacity */
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* Bootstrap z-index for modal */
+}
+
+.gallery-modal img {
+  max-width: 90%;
+  max-height: 80%;
+  border: 5px solid white;
+}
+
+.gallery-modal.active {
+  display: flex;
+}
+
+.gallery-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+/* =============== gallery ends =============== */
+
+/* =============== our vision design starts =============== */
+.our-vision-div {
+  background-color: white;
+  padding: 10px;
+  border-left: 2px solid #007bff;
+}
+/* =============== our vision design ends =============== */
+
+/* =============== page uder construction starts =============== */
+.page-under-construction {
+  background: linear-gradient(to right, #f8f8f8, #ededed);
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
+/* Animation for rotating gear icon */
+.rotate {
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* =============== page uder construction ends =============== */
+
+/* =============== notes designing starts =============== */
+.notes-header-navlinks {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.notes-header-navlinks:hover {
+  color: #c1c1c1;
+}
+
+.notes-sidebar {
+  height: 100vh;
+  width: auto;
+  position: sticky; /* Make the sidebar sticky */
+  top: 0; /* Sticky at the top */
+  left: 0;
+  background-color: #04091e;
+  padding-top: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 2000;
+}
+
+/* Keep these for the collapsed sidebar behavior */
+.notes-sidebar.collapsed {
+  transform: translateX(-100%);
+}
+#notes-hamburger-btn,
+#notes-sidebar-close-btn {
+  display: none;
+}
+.notes-sidebar-closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px; /* Reduce the width */
+  height: 20px; /* Reduce the height */
+  font-size: 10px; /* Reduce the font size */
+  border: none;
+  cursor: pointer;
+  background-color: transparent; /* No background color */
+  color: white;
+  background-color: white;
+}
+#notes-navBar {
+  display: block;
+}
+
+/* Display button for viewports below 800px */
+@media (max-width: 992px) {
+  .notes-sidebar {
+    position: fixed; /* Keep the fixed positioning for small screens */
+    width: 300px;
+    transform: translateX(-100%);
+    top: 0;
+  }
+  .notes-sidebar.active {
+    transform: translateX(0);
+  }
+  .notes-content {
+    margin-left: 0;
+  }
+  #notes-hamburger-btn,
+  #notes-sidebar-close-btn {
+    display: block;
+  }
+  #notes-navBar {
+    display: none;
+  }
+}
+
+.notes-sidebar a.nav-link {
+  color: #ccc; /* Default link color */
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.notes-sidebar a.nav-link:hover {
+  background-color: #3d3d3d; /* Background color change on hover */
+  color: white; /* Text color change to white on hover */
+}
+
+.notes-sidebar a.nav-link.active {
+  background-color: #3d3d3d; /* Active link background */
+  color: white; /* Active link text color */
+}
+
+.notes-content {
+  transition: margin-left 0.3s ease;
+}
+.notes-div {
+  padding: 20px;
+}
+
+.notes-imp-div {
+  padding: 15px;
+  background-color: #1d1d1d;
+  color: white;
+  box-shadow: 0px 0px 5px rgb(108, 108, 108);
+  border-radius: 5px;
+}
+.flag-notes-imp-div {
+  border-left: 5px solid rgb(0, 123, 255);
+}
+.notes-heading {
+  font-size: 1.4rem;
+  color: #141414;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.notes-subheading {
+  font-size: 1.1rem;
+  color: #414141;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.notes-sub-subheading {
+  font-size: 0.9rem;
+  color: #563cff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.more-advanced-concepts-div {
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(15, 15, 15);
+  box-shadow: 0px 0px 5px rgb(187, 187, 187);
+  border-radius: 3px;
+  text-decoration: none;
+}
+.more-advanced-concepts-href {
+  text-decoration: none;
+  font-weight: bold;
+}
+.notes-red-border-box {
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.notes-red-border-box-text {
+  position: relative;
+  display: inline;
+  bottom: 25px;
+  padding: 0 0px;
+  color: #0088cc;
+  left: 15px;
+  font-size: 1.3rem;
+  background-color: rgb(255, 255, 255);
+}
+.para-note {
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: rgb(55, 55, 55);
+  box-shadow: 0px 0px 5px rgb(180, 180, 180);
+  border-radius: 5px;
+  border-left: 2px solid #000000;
+}
+/* =============== notes designing ends =============== */
+
+img {
+  /* box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.479); */
+  /* border-radius: 5px; */
+}
+
+.java-output {
+  background-color: #041120;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+  padding-bottom: 1px;
+}
+
+.output-heading {
+  color: aqua;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* --------------------------------- Technology Card */
+.card-item {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  /* padding: 10px; */
+  margin: 20px;
+  background-color: rgba(222, 232, 240, 0.58);
+  border: 1px solid rgba(142, 172, 190, 0.58);
+  box-shadow: 12px 15px 50px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card-item:hover {
+  border: 1px solid black;
+  transform: scale(1.1);
+}
+
+.card-item:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+/* ---------------------------------------Icon bounce */
+.container-icon {
+  width: fit-content;
+  gap: 10px;
+  box-shadow: none;
+}
+
+.folder {
+  width: min-content;
+  margin: auto;
+
+  animation: float 2s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-25px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}

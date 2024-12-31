@@ -47,14 +47,29 @@
                     <h3 class="text-center">Difference Between JavaScript / TypeScript</h3>
                     <hr />
 
+                    <!-- Information of above topic -->
+                    <section>
+                        <h4 class="notes-heading"><i class="bi bi-brightness-low-fill"></i> General Difference between Javascript and Typescript</h4>
+
+                        <div class="ms-4">
+                            <p><strong>JavaScript</strong> is a dynamic language with no type checking, which can lead to runtime errors.</p>
+                            <p><strong>TypeScript</strong> is a superset of JavaScript that adds static typing. This allows for better code maintainability, improved code editor support (like autocompletion and refactoring), and early detection of potential errors during development.</p>
+
+                            <strong>Why compare them?</strong>
+                            <p>TypeScript offers significant advantages in larger projects and teams by enhancing code quality and developer productivity.</p>
+                        </div>
+                    </section>
+
+                    <hr class="mt-4 mb-4">
+                    
                     <!-- Difference between JavaScript / Typescript -->
                     <section>
+                        <h4 class="notes-heading mt-4 "><i class="bi bi-brightness-low-fill"></i> Difference between JavaScript and Typescript</h4>
 
-                        <h4 class="notes-heading mb-5 mt-5"><i class="bi bi-brightness-low-fill"></i>Difference between JavaScript and Typescript</h4>
-
-                        <table class="table table-bordered table-hover table-striped">
+                        <table class="table table-bordered table-hover table-striped mt-3">
                             <thead>
-                                <tr>
+                                <tr class="table-dark">
+                                    <th><strong>No</strong></th>
                                     <th><strong>Aspect</strong></th>
                                     <th><strong>JavaScript</strong></th>
                                     <th><strong>TypeScript</strong></th>
@@ -62,81 +77,96 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>1</td>
                                     <td><strong>Typing</strong></td>
                                     <td>Dynamically typed</td>
                                     <td>Statically typed (optional type annotations)</td>
                                 </tr>
                                 <tr>
+                                    <td>2</td>
                                     <td><strong>Compilation</strong></td>
                                     <td>Interpreted directly by the browser or Node.js</td>
                                     <td>Compiled into JavaScript before execution</td>
                                 </tr>
                                 <tr>
+                                    <td>3</td>
                                     <td><strong>Tooling Support</strong></td>
                                     <td>Basic tooling (limited error checking)</td>
                                     <td>Advanced tooling with features like autocompletion, type inference, and error
                                         checking</td>
                                 </tr>
                                 <tr>
+                                    <td>4</td>
                                     <td><strong>Type Safety</strong></td>
                                     <td>No type checking, errors are caught at runtime</td>
                                     <td>Type checking at compile time, reducing runtime errors</td>
                                 </tr>
                                 <tr>
+                                    <td>5</td>
                                     <td><strong>Syntax</strong></td>
                                     <td>Simple and flexible syntax</td>
                                     <td>Includes additional features like interfaces, enums, and generics</td>
                                 </tr>
                                 <tr>
+                                    <td>6</td>
                                     <td><strong>Community</strong></td>
                                     <td>Larger community, widely used for web development</td>
                                     <td>Smaller but growing community, increasingly popular in large applications</td>
                                 </tr>
                                 <tr>
+                                    <td>7</td>
                                     <td><strong>Backward Compatibility</strong></td>
                                     <td>Runs directly on all browsers without any setup</td>
                                     <td>Requires a compilation step to convert to JavaScript</td>
                                 </tr>
                                 <tr>
+                                    <td>8</td>
                                     <td><strong>Learning Curve</strong></td>
                                     <td>Easy to learn and start coding</td>
                                     <td>Steeper learning curve due to the addition of type annotations and concepts</td>
                                 </tr>
                                 <tr>
+                                    <td>9</td>
                                     <td><strong>Code Refactoring</strong></td>
                                     <td>Refactoring is error-prone and harder to manage in large codebases</td>
                                     <td>Type system helps in refactoring with fewer errors and better code structure
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>10</td>
                                     <td><strong>Support for Modern Features</strong></td>
                                     <td>Supports modern JavaScript features with ECMAScript standards</td>
                                     <td>Supports modern features and adds additional capabilities (like interfaces and
                                         type inference)</td>
                                 </tr>
                                 <tr>
+                                    <td>11</td>
                                     <td><strong>Popular Frameworks</strong></td>
                                     <td>Widely used with frameworks like React, Angular, Node.js, Vue.js</td>
                                     <td>Preferred with frameworks like Angular, React, and NestJS for better type safety
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>12</td>
                                     <td><strong>Integration with Libraries</strong></td>
                                     <td>Works with most JavaScript libraries without additional setup</td>
                                     <td>Works with JavaScript libraries, but type definitions may be needed for some
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>13</td>
                                     <td><strong>Error Detection</strong></td>
                                     <td>Errors are only detected at runtime</td>
                                     <td>Errors are caught during the compile time, reducing runtime bugs</td>
                                 </tr>
                                 <tr>
+                                    <td>14</td>
                                     <td><strong>Runtime Performance</strong></td>
                                     <td>Directly interpreted by the browser or server at runtime</td>
                                     <td>After compilation, runtime performance is similar to JavaScript</td>
                                 </tr>
                                 <tr>
+                                    <td>15</td>
                                     <td><strong>Interoperability</strong></td>
                                     <td>Works seamlessly with other JavaScript code</td>
                                     <td>Interoperates well with JavaScript, but may require type definitions for some
@@ -145,8 +175,6 @@
                             </tbody>
                         </table>
                     </section>
-
-
                 </div>
             </div>
 
@@ -155,7 +183,7 @@
 
                 </div>
                 <div class="col-6 d-flex justify-content-end">
-                    <a href="history-of-java-by-deepak-smart-programming.html" class="btn btn-success">Next Topic <i
+                    <a href="ch_1_L_4-types-of-javascript-by-deepak-smart-programming.php" class="btn btn-success">Next Topic <i
                             class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
@@ -167,129 +195,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer mt-4">
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <h5 class="text-white">Menus</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="footer-link">Home</a></li>
-                        <li>
-                            <a href="free-courses-by-smart-programming.html" class="footer-link">Free Courses</a>
-                        </li>
-                        <li>
-                            <a href="premium-courses-by-smart-programming.html" class="footer-link">Premium Courses</a>
-                        </li>
-                        <li>
-                            <a href="trainings-by-smart-programming.html" class="footer-link">Trainings</a>
-                        </li>
-                        <li>
-                            <a href="development-by-smart-programming.html" class="footer-link">Development</a>
-                        </li>
-                        <li>
-                            <a href="contact-smart-programming.html" class="footer-link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <h5 class="text-white">
-                        Useful links for Industrial Training in Chandigarh
-                    </h5>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="core-java-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Core Java Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="advance-java-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Advance Java Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="spring-framework-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Spring Framework Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="springboot-framework-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Springboot Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="android-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Android Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="java-logical-questions-free-course-by-deepak-smart-programming.html"
-                                        class="footer-link">Java Logical Questioning Free Course</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Core-Java-With-5-Projects"
-                                        target="_blank" class="footer-link">Core Java Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Advance-Java" target="_blank"
-                                        class="footer-link">Advance Java Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Spring-Framework" target="_blank"
-                                        class="footer-link">Spring Framework Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Spring-Boot-Framework"
-                                        target="_blank" class="footer-link">Springboot Premium Course</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center mt-5">
-                <div class="col-md-8">
-                    <footer>
-                        <p>
-                            &copy; 2024 Smart Programming, Chandigarh. All Rights Reserved.
-                            <br />
-                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-                            &nbsp; | &nbsp;
-                            <a href="terms-of-service.html" class="footer-link">Terms Of Services</a>
-                            &nbsp; | &nbsp;
-                            <a href="cancellation-refund-policy.html" class="footer-link">Cancellation/Refund Policy</a>
-                        </p>
-                    </footer>
-                </div>
-                <div class="col-md-4">
-                    <div class="social-icons">
-                        <a href="https://www.youtube.com/c/SmartProgramming" target="_blank"
-                            class="me-2 text-decoration-none">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        <a href="https://www.facebook.com/smartprogramming.india" target="_blank"
-                            class="me-2 text-decoration-none">
-                            <i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/smart_programming/" target="_blank"
-                            class="me-2 text-decoration-none">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://t.me/smart_programming_deepak" target="_blank"
-                            class="me-2 text-decoration-none">
-                            <i class="bi bi-telegram"></i>
-                        </a>
-                        <a href="https://discord.gg/Up9dQ3gP6k" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-discord"></i>
-                        </a>
-                        <a href="https://whatsapp.com/channel/0029Va6n2Gs42Dckpa2T1U1i" target="_blank"
-                            class="me-2 text-decoration-none">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include 'footer.php'; ?>
 
     <script>
         document

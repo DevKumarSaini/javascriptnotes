@@ -45,98 +45,118 @@
                     <hr />
 
                     <section>
+                        <!-- Javascript while loop introduction -->
+                        <div>
+                            <h4 class="notes-heading"><i class="bi bi-brightness-low-fill"></i> While Loop</h4>
 
-                        <h2><strong>`while` Loop in JavaScript</strong></h2>
-                        <p>The <code>while</code> loop is one of the most fundamental looping structures in JavaScript. It is used to execute a block of code as long as a specified condition evaluates to <code>true</code>. The loop keeps running the code until the condition becomes <code>false</code>.</p>
+                            <div class="ms-4">
+                                <p>The <code>while</code> loop is one of the most fundamental looping structures in JavaScript. It is used to execute a block of code as long as a specified condition evaluates to <code>true</code>. The loop keeps running the code until the condition becomes <code>false</code>.</p>
 
-                        <hr>
+                                <div class="ms-3">
+                                    <h5 class="notes-subheading">Syntax</h5>
+                                    <pre class="ms-4"><code class="language-javascript">while (condition) {
+        // Code to be executed
+    }</code></pre>
+                                    <ul>
+                                        <li><strong>condition</strong>: The condition is evaluated before each iteration. If it evaluates to <code>true</code>, the loop executes the code inside the block. If it evaluates to <code>false</code>, the loop exits and the code stops executing.</li>
+                                    </ul>
 
-                        <h3><strong>Syntax:</strong></h3>
-                        <pre><code>while (condition) {
-    // Code to be executed
-}</code></pre>
-                        <ul>
-                            <li><strong>condition</strong>: The condition is evaluated before each iteration. If it evaluates to <code>true</code>, the loop executes the code inside the block. If it evaluates to <code>false</code>, the loop exits and the code stops executing.</li>
-                        </ul>
+                                    <h5 class="notes-subheading">How the <code>while</code> Loop Works</h5>
+                                    <ol>
+                                        <li>The <code>condition</code> is evaluated before each iteration.</li>
+                                        <li>If the condition is <code>true</code>, the code inside the loop block is executed.</li>
+                                        <li>After the code inside the loop block is executed, the condition is checked again.</li>
+                                        <li>This process repeats until the condition evaluates to <code>false</code>.</li>
+                                    </ol>
 
-                        <h3><strong>How the <code>while</code> Loop Works:</strong></h3>
-                        <ol>
-                            <li>The <code>condition</code> is evaluated before each iteration.</li>
-                            <li>If the condition is <code>true</code>, the code inside the loop block is executed.</li>
-                            <li>After the code inside the loop block is executed, the condition is checked again.</li>
-                            <li>This process repeats until the condition evaluates to <code>false</code>.</li>
-                        </ol>
+                                    <div class="mt-4">
+                                        <h5 class="notes-subheading">1. While Basic Example</h5>
+                                        <div class="ms-3">
+                                            <p>Here’s a simple example of a <code>while</code> loop that prints numbers from 1 to 5:</p>
+                                            <pre><code class="language-javascript">let i = 1;
+    while (i <= 5) {
+        console.log(i);
+        i++;  // Incrementing i by 1
+    }</code></pre>
+                                            <p><strong>Output:</strong></p>
+                                            <pre><code class="language-javascript">1
+    2
+    3
+    4
+    5</code></pre>
+    
+                                        </div>
+    
+                                        <h5 class="notes-subheading">Explanation</h5>
+                                        <ul>
+                                            <li><strong>Initialization</strong>: The variable <code>i</code> is initialized to 1.</li>
+                                            <li><strong>Condition</strong>: The condition <code>i <= 5</code> is checked. As long as <code>i</code> is less than or equal to 5, the loop will continue.</li>
+                                            <li><strong>Increment</strong>: After each iteration, <code>i</code> is incremented by 1 (<code>i++</code>).</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                        <h3><strong>Basic Example:</strong></h3>
-                        <p>Here’s a simple example of a <code>while</code> loop that prints numbers from 1 to 5:</p>
-                        <pre><code>let i = 1;
 
-while (i <= 5) {
-    console.log(i);
-    i++;  // Incrementing i by 1
-}</code></pre>
-                        <p><strong>Output:</strong></p>
-                        <pre><code>1
-2
-3
-4
-5</code></pre>
+                                <!-- While loop with infinite loop -->
+                                <div class="mt-4">
+                                    <h5 class="notes-subheading">2. While with Infinite Loop (Caution)</h5>
+                                    <div class="ms-3">
+                                        <p>If you forget to modify the loop condition inside the loop block, you could accidentally create an infinite loop. Here’s an example:</p>
+                                        <strong>Example with infinite loop</strong></>
+                                        <pre> <code class="language-javascript">let i = 1;
+        while (i <= 5) {
+            console.log(i);
+            // Missing increment, this creates an infinite loop
+        }</code></pre>
+                                        <p><strong>Output:</strong></p>
+                                        <pre><code class="language-javascript">1
+        1
+        1
+        ...</code></pre>
 
-                        <h3><strong>Explanation:</strong></h3>
-                        <ul>
-                            <li><strong>Initialization</strong>: The variable <code>i</code> is initialized to 1.</li>
-                            <li><strong>Condition</strong>: The condition <code>i <= 5</code> is checked. As long as <code>i</code> is less than or equal to 5, the loop will continue.</li>
-                            <li><strong>Increment</strong>: After each iteration, <code>i</code> is incremented by 1 (<code>i++</code>).</li>
-                        </ul>
+                                        <strong>Explanation</strong>
+                                        <ul>
+                                            <li>In this example, the value of <code>i</code> is never changed, so the condition <code>i <= 5</code> will always remain <code>true</code>, causing an infinite loop.</li>
+                                            <li>To avoid infinite loops, always ensure that the loop condition will eventually become <code>false</code> or that the loop has a way to terminate after a set number of iterations.</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                        <hr>
 
-                        <h3><strong>Example with Infinite Loop (Caution):</strong></h3>
-                        <p>If you forget to modify the loop condition inside the loop block, you could accidentally create an infinite loop. Here’s an example:</p>
-                        <pre><code>let i = 1;
+                                <!-- While loop with break -->
+                                <div class="mt-4">
+                                    <h5 class="notes-subheading">3. While Loop with <code>break</code> and <code>continue</code></h5>
+                                    <div class="ms-3">
+                                        <ul>
+                                            <li><strong><code>break</code></strong>: Exits the loop entirely, even if the condition is still <code>true</code>.</li>
+                                            <li><strong><code>continue</code></strong>: Skips the current iteration and proceeds with the next one.</li>
+                                        </ul>
 
-while (i <= 5) {
-    console.log(i);
-    // Missing increment, this creates an infinite loop
-}</code></pre>
-                        <p><strong>Output:</strong></p>
-                        <pre><code>1
-1
-1
-...</code></pre>
+                                        <strong>Example with <code>break</code></strong></>
+                                        <pre><code class="language-javascript">let i = 1;
+    while (i <= 5) {
+        if (i === 3) {
+            break;  // Exit the loop when i equals 3
+        }
+        console.log(i);
+        i++;
+    }</code></pre>
+                                        <p><strong>Output:</strong></p>
+                                        <pre><code class="language-javascript">1
+    2</code></pre>
 
-                        <h3><strong>Explanation:</strong></h3>
-                        <p>In this example, the value of <code>i</code> is never changed, so the condition <code>i <= 5</code> will always remain <code>true</code>, causing an infinite loop.</p>
-                        <p>To avoid infinite loops, always ensure that the loop condition will eventually become <code>false</code> or that the loop has a way to terminate after a set number of iterations.</p>
+                                        <strong>Explanation:</strong>
+                                        <p>The loop stops when <code>i</code> equals 3 due to the <code>break</code> statement.</p>
+                                    </div>
+                                </div>
 
-                        <hr>
 
-                        <h3><strong><code>while</code> Loop with <code>break</code> and <code>continue</code>:</strong></h3>
-                        <ul>
-                            <li><strong><code>break</code></strong>: Exits the loop entirely, even if the condition is still <code>true</code>.</li>
-                            <li><strong><code>continue</code></strong>: Skips the current iteration and proceeds with the next one.</li>
-                        </ul>
-
-                        <h4><strong>Example with <code>break</code>:</strong></h4>
-                        <pre><code>let i = 1;
-
-while (i <= 5) {
-    if (i === 3) {
-        break;  // Exit the loop when i equals 3
-    }
-    console.log(i);
-    i++;
-}</code></pre>
-                        <p><strong>Output:</strong></p>
-                        <pre><code>1
-2</code></pre>
-
-                        <h3><strong>Explanation:</strong></h3>
-                        <p>The loop stops when <code>i</code> equals 3 due to the <code>break</code> statement.</p>
-
-                        <h4><strong>Example with <code>continue</code>:</strong></h4>
-                        <pre><code>let i = 1;
-
+                                <!-- While with continue -->
+                                <div class="mt-4">
+                                    <h4 class="notes-subheading">4. While with <code>continue</code></h4>
+                                    <div class="ms-3">
+                                        <p>In while loop <code>continue</code> is used to skip an specific iteration according to specific conditions</p>
+<pre><code class="language-javascript">let i = 1;
 while (i <= 5) {
     if (i === 3) {
         i++;
@@ -146,37 +166,36 @@ while (i <= 5) {
     i++;
 }</code></pre>
                         <p><strong>Output:</strong></p>
-                        <pre><code>1
+                        <pre><code class="language-javascript">1
 2
 4
 5</code></pre>
-
-                        <h3><strong>Explanation:</strong></h3>
-                        <p>When <code>i</code> equals 3, the <code>continue</code> statement skips the current iteration, and the value 3 is not printed.</p>
-
-                        <hr>
-
-                        <h3><strong>When to Use the <code>while</code> Loop:</strong></h3>
-                        <ul>
-                            <li>Use the <code>while</code> loop when you don't know in advance how many times the loop will need to execute, but you know the loop should continue as long as a specific condition is true.</li>
-                            <li>It’s useful when you want to repeat something while a condition remains true and the number of iterations is not predetermined.</li>
-                        </ul>
-
-                        <hr>
-
-                        <h3><strong>Summary:</strong></h3>
-                        <ul>
-                            <li>The <code>while</code> loop repeats a block of code as long as a specified condition evaluates to <code>true</code>.</li>
-                            <li>Make sure the condition will eventually become <code>false</code> to avoid infinite loops.</li>
-                            <li>Use <code>break</code> to exit the loop early and <code>continue</code> to skip the current iteration.</li>
-                        </ul>
-
-                        <p>Let me know if you need further clarification or examples!</p>
+                
+                                        <strong>Explanation:</strong>
+                                        <p>When <code>i</code> equals 3, the <code>continue</code> statement skips the current iteration, and the value 3 is not printed.</p>
+                                    </div>
+                                </div>
 
 
+                                <hr class="mt-4 mb-4">
 
+                                <div class="ms-3">
+                                    <h5 class="notes-subheading">Selection of <code>while</code> Loop</h5>
+                                    <ul>
+                                        <li>Use the <code>while</code> loop when you don't know in advance how many times the loop will need to execute, but you know the loop should continue as long as a specific condition is true.</li>
+                                        <li>It’s useful when you want to repeat something while a condition remains true and the number of iterations is not predetermined.</li>
+                                    </ul>
+            
+                                    <h5 class="notes-subheading">Note</h5>
+                                    <ul>
+                                        <li>The <code>while</code> loop repeats a block of code as long as a specified condition evaluates to <code>true</code>.</li>
+                                        <li>Make sure the condition will eventually become <code>false</code> to avoid infinite loops.</li>
+                                        <li>Use <code>break</code> to exit the loop early and <code>continue</code> to skip the current iteration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-
                 </div>
             </div>
 
@@ -185,7 +204,7 @@ while (i <= 5) {
 
                 </div>
                 <div class="col-6 d-flex justify-content-end">
-                    <a href="history-of-java-by-deepak-smart-programming.html" class="btn btn-success">Next Topic <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="ch_4_L_3-do-while-loop-in-javascript-deepak-smart-programming.php" class="btn btn-success">Next Topic <i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
 
@@ -196,114 +215,7 @@ while (i <= 5) {
     </div>
 
     <!-- Footer -->
-    <div class="footer mt-4">
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <h5 class="text-white">Menus</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="footer-link">Home</a></li>
-                        <li>
-                            <a href="free-courses-by-smart-programming.html" class="footer-link">Free Courses</a>
-                        </li>
-                        <li>
-                            <a href="premium-courses-by-smart-programming.html" class="footer-link">Premium Courses</a>
-                        </li>
-                        <li>
-                            <a href="trainings-by-smart-programming.html" class="footer-link">Trainings</a>
-                        </li>
-                        <li>
-                            <a href="development-by-smart-programming.html" class="footer-link">Development</a>
-                        </li>
-                        <li>
-                            <a href="contact-smart-programming.html" class="footer-link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <h5 class="text-white">
-                        Useful links for Industrial Training in Chandigarh
-                    </h5>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="core-java-free-course-by-deepak-smart-programming.html" class="footer-link">Core Java Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="advance-java-free-course-by-deepak-smart-programming.html" class="footer-link">Advance Java Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="spring-framework-free-course-by-deepak-smart-programming.html" class="footer-link">Spring Framework Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="springboot-framework-free-course-by-deepak-smart-programming.html" class="footer-link">Springboot Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="android-free-course-by-deepak-smart-programming.html" class="footer-link">Android Free Course</a>
-                                </li>
-                                <li>
-                                    <a href="java-logical-questions-free-course-by-deepak-smart-programming.html" class="footer-link">Java Logical Questioning Free Course</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Core-Java-With-5-Projects" target="_blank" class="footer-link">Core Java Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Advance-Java" target="_blank" class="footer-link">Advance Java Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Spring-Framework" target="_blank" class="footer-link">Spring Framework Premium Course</a>
-                                </li>
-                                <li>
-                                    <a href="https://courses.smartprogramming.in/learn/Spring-Boot-Framework" target="_blank" class="footer-link">Springboot Premium Course</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center mt-5">
-                <div class="col-md-8">
-                    <footer>
-                        <p>
-                            &copy; 2024 Smart Programming, Chandigarh. All Rights Reserved.
-                            <br />
-                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-                            &nbsp; | &nbsp;
-                            <a href="terms-of-service.html" class="footer-link">Terms Of Services</a>
-                            &nbsp; | &nbsp;
-                            <a href="cancellation-refund-policy.html" class="footer-link">Cancellation/Refund Policy</a>
-                        </p>
-                    </footer>
-                </div>
-                <div class="col-md-4">
-                    <div class="social-icons">
-                        <a href="https://www.youtube.com/c/SmartProgramming" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        <a href="https://www.facebook.com/smartprogramming.india" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/smart_programming/" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://t.me/smart_programming_deepak" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-telegram"></i>
-                        </a>
-                        <a href="https://discord.gg/Up9dQ3gP6k" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-discord"></i>
-                        </a>
-                        <a href="https://whatsapp.com/channel/0029Va6n2Gs42Dckpa2T1U1i" target="_blank" class="me-2 text-decoration-none">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include 'footer.php'; ?>
 
     <script>
         document

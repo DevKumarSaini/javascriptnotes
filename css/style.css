@@ -959,3 +959,8 @@ img {
         transform: translatey(0px);
     }
 }
+
+
+strong u:hover{
+    cursor: pointer;
+}
